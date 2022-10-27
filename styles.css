@@ -1,0 +1,32 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-header {
+    width: 100vw;
+    height: 100vh;
+    background-color: #191718;
+    color: white;
+}
+
+nav {
+    color: aquamarine;
+    width: 15%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.logo-title {
+    width: 100%;
+    text-align: center;
+}
+
+.next-trip{
+    font-size: larger;
+}
