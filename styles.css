@@ -1,6 +1,9 @@
 *, html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .hero-header {
@@ -11,22 +14,92 @@
 }
 
 nav {
+    margin-left: 1em;
+    padding: 1em;
     color: aquamarine;
-    width: 15%;
+    width: 10%;
     height: 100%;
     right: 0;
     position: absolute;
 }
 
 nav ul {
+    height: 100%;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(192, 192, 192);
+    font-family: 'Italiana';
 }
 
 .logo-title {
     width: 100%;
     text-align: center;
+    font-family: 'Aguafina Script';
+    font-size: 1.4rem;
+    font-weight: 50;
 }
 
-.next-trip{
-    font-size: larger;
+.big-font {
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #191718;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FAFF0043;
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 13rem;
+}
+
+.header-middle {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.text-button {
+    align-self: center;
+    text-align: center;
+}
+
+.planning {
+    font-family: 'Inter';
+    font-weight: 300;
+    text-decoration: wavy;
+    font-size: 2rem;
+}
+
+.your {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.next-trip {
+    font-family: 'Inter';
+    font-weight: 900;
+    color: yellow;
+    font-size: 2.7rem;
+}
+
+.btn {
+    width: 70%;
+    justify-self: center;
+    margin-top: 10px;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Inter';
+    font-weight: 900;
+    background-color: yellow;
 }
